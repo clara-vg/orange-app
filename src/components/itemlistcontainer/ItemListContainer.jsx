@@ -1,9 +1,8 @@
-import React from 'react'
 
-const ItemListContainer = () => {
+const ItemListContainer = (props) => {
   return (
     <div>
-      <p> <strong> Aqui vas a poder encontrar contenido de mi tienda </strong></p> 
+      {props.label}
     </div>
   )
 }
