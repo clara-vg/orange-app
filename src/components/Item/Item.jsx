@@ -1,7 +1,6 @@
 const Item = ( {product} ) => {
     return (
     <div className="max-w-sm rounded overflow-hidden shadow-lg ">
-        <li key={product.id}> {product.category} </li>
             <img className="w-full" src= {product.img} alt="" />
         <div className="px-6 py-4">
             <div className="font-bold text-xl mb-2"> {product.name} </div>
