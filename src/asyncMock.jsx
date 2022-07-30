@@ -6,7 +6,7 @@ export const products = [
         category: "cuadros",
         img: "./images/cuadro1.png",
         stock: 5,
-        description: "Descripcion de esta imagen"
+        description: "Una técnica clave para crear bellos paisajes de montañas es incluir profundidad. Los lentes gran angular se emplean para lograr esto. Acercarte a un elemento importante en la parte inferior del marco (como una roca, o una flor). El ojo se sentirá atraído por esa zona en la fotografía."
     },
     {
         id: "2",
@@ -32,6 +32,14 @@ export const products = [
     return new Promise((resolve) => {
         setTimeout(() => {
             resolve(products)
+        }, 2000)
+    })
+}
+
+export const getProduct = () => {
+    return new Promise((resolve) => {
+        setTimeout(() => {
+            resolve(products[0])
         }, 2000)
     })
 }
