@@ -1,8 +1,8 @@
 import './App.css';
-import Counter from './components/Counter/Counter';
 import ItemDetailContainer from './components/Itemdetailcontainer/ItemDetailContainer';
 import ItemListContainer from './components/itemlistcontainer/ItemListContainer';
 import NavBar from './components/NavBar';
+import { BrowserRouter, Routes, Route } from 'react-router-dom'
 
 
 function App() {
@@ -13,11 +13,13 @@ function App() {
 
   return (
     <div className="App">
-      
-      <NavBar />
-      <Counter stock={5} initial={1} onAdd={handleOnAdd} />
-      <ItemListContainer label="Aqui vas a poder encontrar el contenido de mi tienda"/>
-      <ItemDetailContainer  />
+     < BrowserRouter>
+        <NavBar />
+          <Routes>
+            <Route path='/' element={<ItemListContainer label="Aqui vas a poder encontrar el contenido de mi tienda"/>} /> 
+            <Route path='/detail/:productId' element={<ItemDetailContainer />} />
+          </ Routes>
+      </ BrowserRouter>
     </div>
   );
 }
