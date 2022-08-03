@@ -16,7 +16,8 @@ function App() {
      < BrowserRouter>
         <NavBar />
           <Routes>
-            <Route path='/' element={<ItemListContainer label="Aqui vas a poder encontrar el contenido de mi tienda"/>} /> 
+            <Route path='/' element={<ItemListContainer label="Todos nuestros productos"/>} /> 
+            <Route path='/category/:categoryId' element={<ItemListContainer label="Estamos filtrando"/>} /> 
             <Route path='/detail/:productId' element={<ItemDetailContainer />} />
           </ Routes>
       </ BrowserRouter>

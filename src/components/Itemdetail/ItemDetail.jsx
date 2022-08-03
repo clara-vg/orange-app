@@ -1,4 +1,3 @@
-
 const ItemDetail = ( props ) => {
     const {name, img, description, price, stock} = props.products
   return (
