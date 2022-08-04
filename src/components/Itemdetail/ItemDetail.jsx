@@ -1,5 +1,5 @@
 const ItemDetail = ( props ) => {
-    const {name, img, description, price, stock} = props.products
+    const {name, img, description, price, stock} = props
   return (
     <div className="card w-96 bg-base-100 shadow-xl">
         <figure>
