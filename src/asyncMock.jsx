@@ -4,7 +4,7 @@ export const products = [
         name: "Caminos",
         price: 100,
         category: "cuadros",
-        img: "./images/cuadro1.png",
+        img: "../images/cuadro1.png",
         stock: 5,
         description: "Una técnica clave para crear bellos paisajes de montañas es incluir profundidad. Los lentes gran angular se emplean para lograr esto. Acercarte a un elemento importante en la parte inferior del marco (como una roca, o una flor). El ojo se sentirá atraído por esa zona en la fotografía."
     },
@@ -13,7 +13,7 @@ export const products = [
         name: "Senderos",
         price: 150,
         category: "cuadros",
-        img: "./images/cuadro2.png",
+        img: "../images/cuadro2.png",
         stock: "5",
         description: "Descripcion de esta imagen"
     },
@@ -22,7 +22,7 @@ export const products = [
         name: "Relieves",
         price: 175,
         category: "cuadros",
-        img: "./images/cuadro3.png",
+        img: "../images/cuadro3.png",
         stock: "5",
         description: "Descripcion de esta imagen"
     }
