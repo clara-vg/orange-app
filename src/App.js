@@ -7,10 +7,6 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom'
 
 function App() {
 
-  const handleOnAdd = (quantity) => {
-    console.log("cantidad de items agregados", quantity)
-  }
-
   return (
     <div className="App">
      < BrowserRouter>

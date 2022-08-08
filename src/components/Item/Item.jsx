@@ -2,8 +2,8 @@ import { Link } from "react-router-dom";
 
 const Item = ({product}) => {
     return (
-    <div className="grid place-items-center">
-        <div className="max-w-sm rounded overflow-hidden shadow-lg ">
+    <div className="grid place-items-center py-6">
+        <div className="max-w-sm rounded overflow-hidden shadow-lg bg-orange-300">
             <img className="w-full" src= {product.img} alt="" />
             <div className="px-6 py-4">
                 <div className="font-bold text-xl mb-2"> {product.name} </div>
