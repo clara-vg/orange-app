@@ -2,6 +2,7 @@ import CartWidget from "./cartwidget/CartWidget"
 import { Link } from "react-router-dom";
 
 const NavBar = () => {
+
   return (
     <div>
         <nav className="flex items-center justify-between flex-wrap bg-orange-300 p-6">

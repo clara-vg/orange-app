@@ -1,15 +1,19 @@
-import { useState } from "react";
+import { useState, useContext } from "react";
 import { Link } from "react-router-dom";
 import Counter from "../Counter/Counter";
+import { CartContext } from "../../context/CartContext";
 
 const ItemDetail = ( props ) => {
-    const {name, img, description, price, stock} = props
+    const {id, name, img, description, price, stock} = props
+        const [quantity, setQuantity] = useState(0)
 
-    const [quantity, setQuantity] = useState(0)
+    const { addItem, getProductQuantity } = useContext(CartContext)
+    const quantityAdded = getProductQuantity(id)
 
     const handleOnAdd = (quantity) => {
         console.log("cantidad de items agregados", quantity)
         setQuantity(quantity)
+        addItem({name, price, quantity})
       }
     
   return (
@@ -32,7 +36,9 @@ const ItemDetail = ( props ) => {
                     <div className="badge badge-outline">
                         <strong> ${price} </strong>
                     </div> 
-                    { quantity > 0 ? <Link to="/cart" > Ir al carrito </Link> : <Counter stock={stock} onAdd={handleOnAdd} />}
+                    { quantity > 0
+                         ? <Link to="/cart" > Ir al carrito </Link> 
+                         : <Counter stock={stock} onAdd={handleOnAdd} initial={quantityAdded} />}
                 </div>
             </div>
         </div> 
