@@ -1,0 +1,36 @@
+.cartGeneral {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.avisoCarroVacio {
+    font-size: 1.3rem;
+    color: white;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.tituloCarrito {
+     font-size: 1.3rem;
+     color: rgb(165, 111, 86);
+     font-family: 'Times New Roman', Times, serif;
+}
+
+.totalFinal {
+    font-size: 1rem;
+    color: rgb(165, 111, 86);
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.btnCart {
+    font-family: 'Times New Roman', Times, serif;
+    background-color: rgb(228, 129, 72);
+    color: white;
+    border: none;
+    font-size: 1rem;
+    font-weight: 600;
+    margin: 20px 5px;
+    width: 10%;
+    border-radius: 10px;
+    box-shadow: 0px 10px 15px #242323;
+}

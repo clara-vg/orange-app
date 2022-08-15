@@ -5,13 +5,12 @@ import NavBar from './components/NavBar';
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import { CartContextProvider } from "./context/CartContext";
 import { UserContextProvider } from "./context/UserContext";
-import { NotificationProvider } from "./notification/Notification";
+import CartContainer from './components/cartcontainer/CartContainer';
 
 function App() {
   
   return (
     <div className="App">
-      <NotificationProvider>
         <UserContextProvider>
           <CartContextProvider>
             <BrowserRouter>
@@ -20,11 +19,11 @@ function App() {
                   <Route path='/' element={<ItemListContainer label="Todos nuestros productos"/>} /> 
                   <Route path='/category/:categoryId' element={<ItemListContainer label="Estamos filtrando"/>} /> 
                   <Route path='/detail/:productId' element={<ItemDetailContainer />} />
+                  <Route path='/cart' element={<CartContainer />} />
                 </Routes>
             </ BrowserRouter>
           </CartContextProvider>
         </UserContextProvider>
-      </NotificationProvider>
     </div>
   );
 }
