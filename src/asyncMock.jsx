@@ -15,7 +15,7 @@ export const products = [
         category: "cuadros",
         img: "../images/cuadro2.png",
         stock: "5",
-        description: "Descripcion de esta imagen"
+        description: "Tu eres el principal factor de la fotografia que estas a punto de plasmar. La belleza del paisaje dependen de tu experiencia, de tu capacidad para saber inmortalizar el momento. Tener la practica y tecnica suficiente para hacer buenas fotografias de naturaleza nos ayudara en esta tarea."
     },
     {
         id: "3",
@@ -24,7 +24,7 @@ export const products = [
         category: "cuadros",
         img: "../images/cuadro3.png",
         stock: "5",
-        description: "Descripcion de esta imagen"
+        description: "No se trata solo de apuntar y disparar, se trata de ver antes la fotografia que quieres hacer, de pensar que historia quieres contar con la foto que estas apunto de realizar. Los retratos que hacemos a la naturaleza son muy especiales, ya que cada imagen va a ser unica y diferente, mostrando algo especial de ese lugar."
     }
 ]
 

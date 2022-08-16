@@ -1,3 +1,4 @@
+import "../cartcontainer/CartContainer.css";
 import { useState, useContext } from "react";
 import { Link } from "react-router-dom";
 import Counter from "../Counter/Counter";
@@ -37,7 +38,7 @@ const ItemDetail = ( props ) => {
                         <strong> ${price} </strong>
                     </div> 
                     { quantity > 0
-                         ? <Link to="/cart" > Ir al carrito </Link> 
+                         ? <Link to="/cart" className="btnCart"> Ir al carrito </Link> 
                          : <Counter stock={stock} onAdd={handleOnAdd} initial={quantityAdded} />}
                 </div>
             </div>
