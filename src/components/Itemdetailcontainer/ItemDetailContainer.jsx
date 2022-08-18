@@ -14,8 +14,8 @@ const ItemDetailContainer = () => {
     useEffect(() => {
 
       getDoc(doc(db, 'products', productId)).then(response => {
-        const product = { id: response.id, ...values}
         const values = response.data()
+        const product = { id: response.id, ...values}
 
         setProduct(product)
       }).catch(error => {
