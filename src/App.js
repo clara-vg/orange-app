@@ -4,14 +4,13 @@ import ItemListContainer from './components/itemlistcontainer/ItemListContainer'
 import NavBar from './components/NavBar';
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import { CartContextProvider } from "./context/CartContext";
-import { UserContextProvider } from "./context/UserContext";
+// import { UserContextProvider } from "./context/UserContext";
 import CartContainer from './components/cartcontainer/CartContainer';
 
 function App() {
-  
   return (
     <div className="App">
-        <UserContextProvider>
+        {/* <UserContextProvider> */}
           <CartContextProvider>
             <BrowserRouter>
               <NavBar />
@@ -23,7 +22,7 @@ function App() {
                 </Routes>
             </ BrowserRouter>
           </CartContextProvider>
-        </UserContextProvider>
+        {/* </UserContextProvider> */}
     </div>
   );
 }
