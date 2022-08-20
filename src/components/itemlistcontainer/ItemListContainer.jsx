@@ -1,5 +1,4 @@
 import { useState, useEffect } from "react"
-// import { getProducts, getProductsByCategory } from "../../asyncMock"
 import ItemList from "../itemList/ItemList"
 import { useParams } from "react-router-dom";
 import { getDocs, collection, query, where } from "firebase/firestore";
@@ -27,17 +26,6 @@ const ItemListContainer = (props) => {
     }).finally(() => {
       setLoading(false)
     })
-
-
-    // const asyncFunction = categoryId ? getProductsByCategory : getProducts
-
-    // asyncFunction(categoryId).then(response => {
-    //   setProducts(response)
-    // }).catch(error => {
-    //   console.log(error)
-    // }).finally(() => {
-    //   setLoading(false)
-    // })
   }, [categoryId])
 
   if(loading) {
