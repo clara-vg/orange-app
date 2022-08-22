@@ -30,7 +30,20 @@
     font-size: 1rem;
     font-weight: 600;
     margin: 20px 5px;
-    width: 10%;
+    width: 35%;
+    height: 30%;
     border-radius: 10px;
     box-shadow: 0px 10px 15px #242323;
+}
+
+.btnCartDos{
+display: flex;
+justify-content: center;
+font-family: 'Times New Roman', Times, serif;
+background-color: rgb(228, 129, 72);
+color: white;
+font-size: 1rem;
+font-weight: 600;
+margin: 20px 5px;
+border-radius: 10px;
 }

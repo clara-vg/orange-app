@@ -38,7 +38,7 @@ const ItemDetail = ( props ) => {
                         <strong> ${price} </strong>
                     </div> 
                     { quantity > 0
-                         ? <Link to="/cart" className="btnCart"> Ir al carrito </Link> 
+                         ? <Link to="/cart" className="btnCartDos"> Ir al carrito </Link> 
                          : <Counter stock={stock} onAdd={handleOnAdd} initial={quantityAdded} />}
                 </div>
             </div>

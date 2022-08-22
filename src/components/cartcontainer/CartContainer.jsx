@@ -5,10 +5,11 @@ import { useContext } from "react";
 import Cart from "../cart/Cart"
 
 const CartContainer = () => {
-    const { cart, getQuantity, getFinalPrice, clearCart} = useContext(CartContext)
+    const { cart, getQuantity, getFinalPrice, limpiarCarrito} = useContext(CartContext)
 
 const totalQuantity = getQuantity()
 const total = getFinalPrice()
+
 
 if(totalQuantity === 0) {
     return (
@@ -30,7 +31,7 @@ return (
         </div>
         <h3 className="totalFinal"> Total de tu compra: ${total} </h3>
         <div>
-            <button className="btnCart" onClick={() => clearCart()}> Vaciar carrito</button>
+            <button className="btnCart" onClick={() => limpiarCarrito()}> Vaciar carrito</button>
             <button className="btnCart"> Comprar</button>
         </div>
     </div>

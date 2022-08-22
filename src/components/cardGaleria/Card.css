@@ -11,10 +11,10 @@
     padding: 0;
   }
   
-  /* body {
+  body {
     margin: 2rem;
     color: var(--clr-gray);
-  } */
+  }
   
   .wrapper-flex {
     display: flex;
