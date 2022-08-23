@@ -153,7 +153,7 @@ const FinalizarCompra = () => {
                 onClick={limpiarCarrito}
                 className="w-40 py-4 text-center text-white bg-red-600 rounded-lg cursor-pointer focus:outline-none focus:ring-transparent, tracking-widest font-boogaloo uppercase"
               >
-                Volver al inicio
+                Volver a la pagina principal
               </button>
             </Link>
           </div>
