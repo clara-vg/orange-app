@@ -1,11 +1,11 @@
-import { useCartContext } from "../../context/CartContext";
+import { CartContext } from "../../context/CartContext";
 import { Link } from "react-router-dom";
-import { useState } from "react";
+import { useContext, useState } from "react";
 import { collection, getFirestore, addDoc } from "firebase/firestore";
 
 const FinalizarCompra = () => {
 
-    const { cart, limpiarCarrito, getFinalPrice, getQuantity} = useCartContext();
+    const { cart, limpiarCarrito, getFinalPrice, getQuantity} = useContext(CartContext);
     const [idCompra, setIdCompra] = useState("")
 
     const [showModal, setShowModal] = useState(false)

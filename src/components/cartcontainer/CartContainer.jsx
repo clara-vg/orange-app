@@ -32,7 +32,7 @@ return (
         <h3 className="totalFinal"> Total de tu compra: ${total} </h3>
         <div>
             <button className="btnCart" onClick={() => limpiarCarrito()}> Vaciar carrito</button>
-            <button className="btnCart"> Comprar</button>
+            <Link to='/finalizarCompra' className="btnCart"> Comprar</Link>
         </div>
     </div>
 )
