@@ -1,0 +1,21 @@
+.containerModal {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: auto;
+    margin-bottom: auto;
+    background-color: rgb(228, 129, 72);
+    width: 600px;
+    height: 500px;
+    border-radius: 10px;
+    box-shadow: 0px 10px 15px #707070;
+}
+
+.textoModal {
+    font-size: large;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: auto;
+    margin-bottom: auto;
+    padding: auto;
+}

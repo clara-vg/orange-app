@@ -1,3 +1,4 @@
+import "./FinalizarCompra.css"
 import { CartContext } from "../../context/CartContext";
 import { Link } from "react-router-dom";
 import { useContext, useState } from "react";
@@ -137,21 +138,21 @@ const FinalizarCompra = () => {
         </div>
       </div>
 
-      {/* Contenedor modal final */}
-      <div className={`${showModal ? "flex" : "hidden"} inset-0 fixed w-full h-full bg-gray-800`}>
-        <div className="container items-center justify-center px-4 py-20 mx-auto md:px-10 place-self-center">
-          <div className="flex flex-col items-center justify-center px-3 py-12 bg-gray-400 rounded-lg md:px-4">
-            <h2 className="text-2xl text-center md:w-9/12 lg:w-7/12 font-shadows">
+     
+      <div className={`${showModal ? "flex" : "hidden"} inset-0 fixed w-full h-full bg-orange-300`}>
+        <div className="containerModal">
+          <div className="textoModal"> 
+            <h2>
               ¡Muchas gracias {buyer.name.toUpperCase()} por tu compra. 
             </h2>
-            <p className="mt-6 text-2xl tracking-widest text-center md:w-9/12 lg:w-7/12 font-shadows">
+            <p className="textoModal">
               Te vamos a enviar un mail a {buyer.email.toLowerCase()} con tu orden de
               compra ID: {idCompra}. En breve vas a estar disfrutándola! Esperamos que  vuelvas a visitarnos muy pronto! 
             </p>
             <Link to="/" className="flex justify-center mt-6">
               <button
                 onClick={limpiarCarrito}
-                className="w-40 py-4 text-center text-white bg-red-600 rounded-lg cursor-pointer focus:outline-none focus:ring-transparent, tracking-widest font-boogaloo uppercase"
+                className="w-40 py-4 text-center text-white bg-orange-300 rounded-lg cursor-pointer focus:outline-none focus:ring-transparent, tracking-widest font-boogaloo uppercase"
               >
                 Volver a la pagina principal
               </button>

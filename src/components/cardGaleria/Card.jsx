@@ -7,23 +7,20 @@ const Card = () => {
       <div className="wrapper-flex py-6">
     <div className="container">
       <img src='../images/20.jpg' alt='' />
-      <h1 className="name">Mountain</h1>
-      <p className="description">Hi there! My name is Anna and I am a book lover, traveler and professional blogger. Follow me to stay connected!</p>
-      <button type="button" className='btnCard'>More Info</button>
+      <h1 className="name">Trees</h1>
+      <p className="description">Boulder.CO!</p>
     </div>
 
     <div className="container">
       <img src='../images/18.jpg' alt='' />
       <p className="name">Mountain</p>
-      <p className="description">Hi there! My name is Anna and I am a book lover, traveler and professional blogger. Follow me to stay connected!</p>
-      <button type="button" className='btnCard'>More Info</button>
+      <p className="description">Boulder.CO!</p>
     </div>
 
     <div className="container">
       <img src='../images/17.jpg' alt='' />
-      <p className="name">Mountain</p>
-      <p className="description">Hi there! My name is Anna and I am a book lover, traveler and professional blogger. Follow me to stay connected!</p>
-      <button type="button" className='btnCard'>More Info</button>
+      <p className="name">Clouds</p>
+      <p className="description">Boulder.CO!</p>
     </div>
     </div>
     </div>
