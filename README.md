@@ -8,7 +8,7 @@
 * **Tutor de la cursada:** Romina S Bocon
 * **FDesarrolado por la alumna:** Clara Vazquez
 
-* **Proyecto final:** 
+* **Proyecto final:** https://orange-beta.vercel.app/ 
 
 ### Librerias y frameworks
 
